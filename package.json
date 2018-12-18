@@ -1,0 +1,35 @@
+{
+  "name": "webdriverio-tests",
+  "version": "1.0.0",
+  "description": "Some tests with webdriverio",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test:dev": "cross-env NODE_ENV=development ./node_modules/webdriverio/bin/wdio ./specs/wdio.dev.conf.js",
+    "test:prod": "cross-env NODE_ENV=production ./node_modules/webdriverio/bin/wdio ./specs/wdio.prod.conf.js"
+  },
+  "keywords": [
+    "webdriver",
+    "webdriverio",
+    "wdio",
+    "ui-testing"
+  ],
+  "author": "Philipp Renoth <renoth@wildoak.de>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "assert": "^1.4.1",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "http-proxy-middleware": "^0.19.1",
+    "parcel-bundler": "^1.10.3",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "webdriverio": "^4.14.1"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs2": "^7.2.0",
+    "debug": "^4.1.0"
+  }
+}
